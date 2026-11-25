@@ -1,0 +1,20 @@
+.wrangler/
+node_modules/
+.DS_Store
+# 권한 토큰이 들어 있는 시연 링크 — 저장소에 올리지 않는다
+docs/DEMO_LINKS_비공개.md
+
+# Local secrets and generated files
+.env*
+.dev.vars*
+.wrangler/
+node_modules/
+.DS_Store
+*.pem
+*.key
+
+# Private or draft materials
+presentation/
+supabase/drafts/
+*DEMO_LINKS*
+HANDOFF.md

@@ -1,0 +1,199 @@
+{
+  "canvas": {
+    "width": 24,
+    "height": 32
+  },
+  "presets": {
+    "mint": {
+      "hair": "spiky_mint",
+      "skin": "light",
+      "top": "blue",
+      "bottom": "navy",
+      "face": "happy",
+      "accessory": "none"
+    },
+    "pink": {
+      "hair": "long_pink",
+      "skin": "peach",
+      "top": "coral",
+      "bottom": "navy",
+      "face": "default",
+      "accessory": "bow"
+    },
+    "blue": {
+      "hair": "bob_navy",
+      "skin": "light",
+      "top": "navy",
+      "bottom": "denim",
+      "face": "default",
+      "accessory": "headphones"
+    },
+    "yellow": {
+      "hair": "fluffy_blonde",
+      "skin": "warm",
+      "top": "yellow",
+      "bottom": "navy",
+      "face": "happy",
+      "accessory": "glasses"
+    }
+  },
+  "palettes": {
+    "hair": {
+      "mint": "#35BBA3",
+      "brown": "#765347",
+      "navy": "#333E68",
+      "blonde": "#F8C45C",
+      "pink": "#E989A6",
+      "black": "#343746"
+    },
+    "top": {
+      "blue": "#4165CE",
+      "coral": "#F78C79",
+      "mint": "#55BBA6",
+      "yellow": "#F5CF64",
+      "cream": "#FBECD8",
+      "navy": "#454F90"
+    },
+    "bottom": {
+      "navy": "#343B61",
+      "denim": "#4A6C99",
+      "brown": "#80665D",
+      "lavender": "#7664A8"
+    },
+    "skin": {
+      "peach": "#F6C1A4",
+      "warm": "#DC9D77",
+      "light": "#FCE0C5",
+      "tan": "#BC7B59"
+    }
+  },
+  "layer_order": [
+    "hair_back",
+    "bottom",
+    "skin",
+    "top",
+    "face",
+    "hair_front",
+    "accessory"
+  ],
+  "part_choices": {
+    "hair_back": [
+      "spiky_mint",
+      "spiky_brown",
+      "spiky_navy",
+      "spiky_blonde",
+      "spiky_pink",
+      "spiky_black",
+      "long_mint",
+      "long_brown",
+      "long_navy",
+      "long_blonde",
+      "long_pink",
+      "long_black",
+      "bob_mint",
+      "bob_brown",
+      "bob_navy",
+      "bob_blonde",
+      "bob_pink",
+      "bob_black",
+      "bun_mint",
+      "bun_brown",
+      "bun_navy",
+      "bun_blonde",
+      "bun_pink",
+      "bun_black",
+      "fluffy_mint",
+      "fluffy_brown",
+      "fluffy_navy",
+      "fluffy_blonde",
+      "fluffy_pink",
+      "fluffy_black",
+      "side_mint",
+      "side_brown",
+      "side_navy",
+      "side_blonde",
+      "side_pink",
+      "side_black"
+    ],
+    "hair_front": [
+      "spiky_mint",
+      "spiky_brown",
+      "spiky_navy",
+      "spiky_blonde",
+      "spiky_pink",
+      "spiky_black",
+      "long_mint",
+      "long_brown",
+      "long_navy",
+      "long_blonde",
+      "long_pink",
+      "long_black",
+      "bob_mint",
+      "bob_brown",
+      "bob_navy",
+      "bob_blonde",
+      "bob_pink",
+      "bob_black",
+      "bun_mint",
+      "bun_brown",
+      "bun_navy",
+      "bun_blonde",
+      "bun_pink",
+      "bun_black",
+      "fluffy_mint",
+      "fluffy_brown",
+      "fluffy_navy",
+      "fluffy_blonde",
+      "fluffy_pink",
+      "fluffy_black",
+      "side_mint",
+      "side_brown",
+      "side_navy",
+      "side_blonde",
+      "side_pink",
+      "side_black"
+    ],
+    "skin": [
+      "peach",
+      "warm",
+      "light",
+      "tan"
+    ],
+    "top": [
+      "blue",
+      "coral",
+      "mint",
+      "yellow",
+      "cream",
+      "navy"
+    ],
+    "bottom": [
+      "navy",
+      "denim",
+      "brown",
+      "lavender"
+    ],
+    "face": [
+      "default",
+      "happy",
+      "wink",
+      "sleepy"
+    ],
+    "accessory": [
+      "cap",
+      "headphones",
+      "glasses",
+      "bow",
+      "star",
+      "none"
+    ]
+  },
+  "fixes_v1_1": [
+    "face/happy: 같은 방향 대각선 눈 → 좌우 대칭 웃는 눈(∩)",
+    "hair_front/fluffy_*: 떨어진 머리카락 덩어리 제거",
+    "hair_front/spiky_*: 이마에 떠 있던 가닥 덩어리 → 머리선에서 이어지는 뾰족 앞머리",
+    "hair_front/long_*: 눈을 가리던 옆머리 안쪽 1칸 축소",
+    "preset pink: long_pink + bow + default 표정",
+    "preset blue: top navy"
+  ]
+}

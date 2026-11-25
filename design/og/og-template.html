@@ -1,0 +1,20 @@
+<!-- OG 이미지(1200×630) 원본 화면. 쓰는 법: public/ 에 잠시 복사해 미리보기 서버로 연 뒤 1200×630 으로 캡처 → public/assets/og/moiddak-og.png. 배포 폴더에는 두지 않는다. -->
+<!doctype html><html lang="ko"><head><meta charset="utf-8" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+<link rel="stylesheet" href="./styles/tokens.css" /><link rel="stylesheet" href="./styles/app.css" />
+<style>html,body{margin:0;width:1200px;height:630px;overflow:hidden;background:#FFF8EC}#og{width:1200px;height:630px;position:relative;font-family:'Pretendard Variable',sans-serif}
+.og-l{position:absolute;left:72px;top:96px;width:560px}.og-l .logo{font-size:96px}.og-l h1{font-size:52px;line-height:1.25;margin:28px 0 0;color:#242338;font-weight:900;letter-spacing:-1px}.og-l p{font-size:28px;color:#55526A;margin:18px 0 0;font-weight:700}
+.og-r{position:absolute;right:64px;top:115px;width:470px;height:400px;border-radius:40px;overflow:hidden;background:linear-gradient(#DCEBFF,#F4F9FF)}.og-r .ground{position:absolute;left:0;right:0;bottom:0;height:92px;background:#B9E39A;box-shadow:inset 0 10px 0 #8FCB6E}.og-r .crowd{position:absolute;left:0;right:0;bottom:56px;display:flex;justify-content:center;gap:6px}.og-r .sun{position:absolute;right:46px;top:40px}.og-r .cl{position:absolute;left:40px;top:60px}</style></head>
+<body><div id="og"></div>
+<script type="module">
+import { html, render } from './lib/deps.js';
+import { Logo, PixelIcon } from './ui/Pixel.js';
+import { Sprite } from './ui/Avatar.js';
+import { ThemeScene } from './ui/ThemeScene.js';
+import { TYPE_KEYS } from './assets/characters/index.js';
+const people = TYPE_KEYS.slice(0, 4).map((t, i) => ({ id: 'p' + i, display_name: t, avatar: { base: t } }));
+localStorage.setItem('moiddak:reduceMotion', '1');
+render(html`<div class="og-l"><${Logo} /><h1>친구들과 약속,<br />이번엔 한 번에 딱!</h1><p>날짜·장소·참석을 한 링크로 정해요</p></div>
+<div class="og-r"><span class="cl"><${PixelIcon} name="cloud" size=${110} color="#FFFFFF" /></span><span class="sun"><${PixelIcon} name="star" size=${54} color="#FFD54A" /></span>
+<div class="ground"></div><div class="crowd">${people.map((p) => html`<${Sprite} person=${p} size=${96} />`)}</div></div>`, document.getElementById('og'));
+</script></body></html>

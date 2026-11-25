@@ -1,0 +1,88 @@
+/* 모이딱 디자인 토큰 — Figma 변수와 1:1로 맞추는 곳.
+   시안이 확정되면 이 파일의 값만 바꾸면 화면 전체가 따라 바뀐다. 컴포넌트 CSS 에는 색 값을 직접 쓰지 않는다. */
+:root {
+  /* 브랜드 팔레트 (인수인계서 제안값 · Figma 최종값 우선) */
+  --palette-blue: #3B55E8;
+  --palette-coral: #FF8469;
+  --palette-ivory: #F9F7F2;
+  --palette-lilac: #DCD4FF;
+  --palette-butter: #FFE49A;
+  --palette-ink: #242338;
+
+  /* 의미 토큰 */
+  --color-bg: var(--palette-ivory);
+  --color-surface: #FFFFFF;
+  --color-text: var(--palette-ink);
+  --color-text-muted: #6B6880;
+  --color-line: #E6E2F0;
+  --color-primary: var(--palette-blue);
+  --color-primary-soft: #E8ECFF;
+  --color-on-primary: #FFFFFF;
+  --color-accent: var(--palette-coral);
+  --color-accent-soft: #FFE6DF;
+  --color-highlight: var(--palette-butter);
+  --color-secondary-soft: var(--palette-lilac);
+
+  /* 버튼: 코랄 바탕에는 흰 글자 대비가 부족(2.4:1)해서 남색 글자(6.4:1)를 쓴다 */
+  --color-cta: var(--palette-coral);
+  --color-on-cta: var(--palette-ink);
+  --color-primary-strong: #2C41B8;
+  --color-cta-strong: #B5361A;
+
+  /* 응답 상태(색 + 글자 병기, 흰 배경 대비 4.5:1 이상) */
+  --status-done: #136B44;
+  --status-done-soft: #DDF3E8;
+  --status-pending: #6B6880;
+  --status-pending-soft: #EEECF3;
+  --status-none: #C2361C;
+  --status-none-soft: #FDE5E0;
+  --status-host: #5E3FC8;
+  --status-host-soft: #ECE6FF;
+
+  /* 배경 장식 */
+  --gradient-sky: linear-gradient(180deg, #E6E9FF 0%, #F1ECFF 55%, #FFF6E6 100%);
+  --color-ground: #BFE3A5;
+  --color-ground-dark: #94CC7A;
+  --color-card-line: #EFE9DF;
+
+  --color-ok: #17734B;
+  --color-ok-soft: #E2F5EB;
+  --color-warn: #8A5A00;
+  --color-warn-soft: #FFF3D1;
+  --color-error: #B42318;
+  --color-error-soft: #FDE7E5;
+  --color-info: #2F45C2;
+  --color-info-soft: #E8ECFF;
+
+  /* 히트맵 6단계(0명 → 전원). 색만으로 판단하지 않도록 칸 안에 숫자를 항상 함께 쓴다. */
+  --heat-0: #F3F1F8;
+  --heat-1: #DDE3FF;
+  --heat-2: #B7C3FF;
+  --heat-3: #8A9CF7;
+  --heat-4: #5D74EE;
+  --heat-5: #3B55E8;
+  --heat-text-light: #FFFFFF;
+
+  /* 글꼴 */
+  --font-ui: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+  --font-size-body: 15px;
+  --font-size-small: 13px;
+  --font-size-title: 24px;
+  --font-size-section: 18px;
+
+  /* 크기·간격 */
+  --space-page-x: 20px;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --radius-card: 20px;
+  --radius-tile: 14px;
+  --radius-control: 12px;
+  --radius-pill: 999px;
+  --touch-min: 44px;
+  --button-h: 52px;
+  --shadow-card: 0 1px 0 rgba(36, 35, 56, .04), 0 6px 18px rgba(36, 35, 56, .05);
+  --map-height: 40vh;
+}
